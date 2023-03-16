@@ -12,25 +12,16 @@ ImagePickerDialog imagePicker = new ImagePickerDialog();
 
 ```
 
-2. set setImagePickedListener with callback
+2. set the setImagePickedListener
 
 ```java
-
       imagePicker.setImagePickedListener(new ImagePickedListener() {
             @Override
             public void onImagePicked(Bitmap bitmap) {
-              
-              //get bitmap from camera
-                
-            }
-
-            @Override
-            public void onImagePicked(Uri uri) {
-
-                //get uri from gallery
+                //set your imageView here
+                imageView.setImageBitmap(bitmap); //Example
             }
         });
-
 ```
 
 3. show
